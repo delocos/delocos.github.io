@@ -1,8 +1,8 @@
 Apicart
 	.setDevEnv()
 	.configure({
-		store: new Apicart.Store({ token: 'NGs2HDfVR7cYraBo6zgKvci62?K2TvOkQO!tQiueGB7hN4uS2pJOXT2SxaMzR6Vr' }),
-		payments: new Apicart.Payments({ token: 'ECoXYZzEwk1f23c7!npgxBABUnYbCcJpwDI6fwLgUrBlkSLFex9jXh0dOdWERpxx' }),
+		store: new Apicart.Store({ token: '9mCu3DlBCa4REI?Q7kKly!Rw6!_FvD8K_dgPXe1b20?r6!sPTQMyCpq_ADt!jXOD' }),
+		payments: new Apicart.Payments({ token: 'Q84lNQyLl?nBGvKxxbcdc!nWFKEZrK?L_Is2r9IaOJo14ONbXw1SMlPIeptcaFza' }),
 		vueComponents: {
 			paymentMethodsList: {
 				allowedMethods: ['cash', 'bank-transfer']
@@ -16,16 +16,19 @@ Apicart
 						clothes: {
 							new: [
 								{
-									dataUrl: 'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/01/1.json',
-									pageUrl: '/producto-prueba/'
+									dataUrl: 'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/01/1.json',
+									pageUrl: '/green-t-shirt/'
 								},
-								'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/01/1.json',
-								'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/02/2.json',
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/02/2.json',
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/03/3.json',
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/04/4.json',
 
 							],
 							discount: [
-								'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/01/1.json',
-								
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/04/4.json',
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/03/3.json',
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/02/2.json',
+								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/01/1.json',
 							]
 						}
 					}
