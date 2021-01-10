@@ -1,142 +1,128 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127787354-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-127787354-2');
-	</script>
-
 	<meta charset="UTF-8">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
-	<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
-	<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#6154bc">
-	<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Apicart Vue.js components | Apicart JAMstack Sandbox</title>
-	<meta name="description" content="Examples of all Apicart Vue.js components on one page!">
-
-	<meta property="og:image" content="https://sandbox.apicart.net/assets/images/apicart-image.png">
-	<meta property="og:title" content="Apicart Vue.js components | Apicart JAMstack Sandbox"/>
-	<meta property="og:url" content="https://sandbox.apicart.net/"/>
-	<meta property="og:site_name" content="Apicart JAMstack Sandbox"/>
-	<meta property="og:type" content="website"/>
-
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:url" content="https://sandbox.apicart.net/">
-	<meta name="twitter:title" content="Apicart Vue.js components | Apicart JAMstack Sandbox">
-	<meta name="twitter:description" content="Examples of all Apicart Vue.js components on one page!">
-	<meta name="twitter:image" content="https://sandbox.apicart.net/assets/images/apicart-image.png">
-	<meta name="twitter:site" content="@apicart_en">
-	<meta name="twitter:creator" content="@apicart_en">
+	<title>E-commerce via API</title>
 </head>
-<body>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/assets/sandbox.css">
 
-	<header class="top-header border-bottom">
-		<nav class="navbar navbar-default-top py-4 px-0">
-			<div class="container-fluid">
-				<div class="navbar-header w-100 d-inline-flex align-items-center justify-content-between">
-					<h1>
-						<img class="logo align-middle" lazy="true" src="/assets/images/apicart-image.png" alt="">
-						<a href="/" class="logo-text align-middle">
-							<strong>Apicart JAMstack Sandbox</strong>
-						</a>
-					</h1>
-					<div id="apicart-cart-dropdown" class="cart-dropdown__wrapper"></div>
+<body>
+	<div class="container">
+		<h1 class="text-center py-5">My amazing E-commerce 💰</h1>
+
+		<div class="pb-5 d-flex flex-row justify-content-center">
+			<div class="mr-5 cart-dropdown"></div>
+			<a role="button" href="#delivery-information" class="btn btn-lg btn-danger text-white">Finish your order</a>
+		</div>
+
+		<div class="d-flex flex-row justify-content-between">
+			<div class="card mx-2">
+				<img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Product 1</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue. </p>
+					<div class="quantity-manipulator text-center" data-item-url="https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/10/10.json"></div>
 				</div>
 			</div>
-		</nav>
-	</header>
 
-	<div class="text-center alert-warning__wrapper">
-		<div class="container m-2 alert alert-warning alert-dismissible fade show d-inline-block" role="alert">
-			<div class="font-weight-bold">Before you start!</div>
-			<small>
-				This is just an example of e-commerce page using <a href="https://apicart.net" rel="noopener" target="blank"><strong>Apicart</strong></a> web components.<br>
-				Do not fill any real information into the forms, because in order to show Apicart functionality, they can be viewed by anyone in the testing administration.
-			</small>
-			<hr>
-				<strong>The Green t-shirt product in the New collection also have a product detail page. Click on it to see it.</strong>
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			<script>
-				document.querySelector('.alert-warning .close').addEventListener('click', function () {
-					document.querySelector('.alert-warning__wrapper').remove();
-				});
-			</script>
+			<div class="card mx-2">
+				<img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Product 2</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue. </p>
+					<div class="quantity-manipulator text-center" data-item-url="https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/11/11.json"></div>
+				</div>
+			</div>
+
+			<div class="card mx-2">
+				<img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Product 3</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue. </p>
+					<div class="quantity-manipulator text-center" data-item-url="https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/12/12.json"></div>
+				</div>
+			</div>
+
+			<div class="card mx-2">
+				<img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Product 4</h5>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse sagittis ultrices augue. </p>
+					<div class="quantity-manipulator text-center" data-item-url="https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/14/14.json"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="delivery-information" class="shopping-steps bg-light p-2 my-5">
+			<h2 class="text-center py-3">Delivery Information</h2>
+
+			<form class="text-left col-6 ml-auto mr-auto">
+				<div class="d-flex flex-md-row">
+					<div class="col-12 col-md-6 pl-md-0 form-group">
+						<label for="payment-methods">Payment method</label>
+						<select class="custom-select mr-sm-2" id="payment-methods" data-apicart-cart-add-parameter="paymentMethod.id">
+							<option disabled selected>---</option>
+							{{foreach paymentMethods as paymentMethod}}
+								{{returnIf ! paymentMethod.all.enabled}}
+								<option value="{{$paymentMethod.all.id}}">{{$paymentMethod.all.name}}</option>
+							{{/foreach}}
+						</select>
+					</div>
+
+					<div class="col-12 col-md-6 pr-md-0 form-group">
+						<label for="shipping-methods">Delivery method</label>
+						<select class="custom-select mr-sm-2" id="shipping-methods" data-apicart-cart-add-parameter="shippingMethod.id">
+							<option disabled selected>---</option>
+							{{foreach shippingMethods as shippingMethod}}
+								{{returnIf ! shippingMethod.all.enabled}}
+								<option value="{{$shippingMethod.all.id}}">{{$shippingMethod.all.name}}</option>
+							{{/foreach}}
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="customer-email">Email address</label>
+					<input type="email" class="form-control" id="customer-email" placeholder="Enter email" data-apicart-cart-add-parameter="shippingAddress.email">
+				</div>
+
+				<div class="d-flex flex-md-row">
+					<div class="col-12 col-md-6 pl-md-0 form-group">
+						<label for="customer-first-name">First name</label>
+						<input type="text" class="form-control" id="customer-first-name" placeholder="First name" data-apicart-cart-add-parameter="shippingAddress.firstName">
+					</div>
+
+					<div class="col-12 col-md-6 pr-md-0 form-group">
+						<label for="customer-last-name">Last name</label>
+						<input type="text" class="form-control" id="customer-last-name" placeholder="Last name" data-apicart-cart-add-parameter="shippingAddress.lastName">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="customer-street-and-number">Street and number</label>
+					<input type="text" class="form-control" id="customer-street-and-number" placeholder="Street and number" data-apicart-cart-add-parameter="shippingAddress.streetAndNumber">
+				</div>
+
+				<div class="d-flex flex-md-row">
+					<div class="col-12 col-md-6 pl-md-0 form-group">
+						<label for="customer-city">City</label>
+						<input type="text" class="form-control" id="customer-city" placeholder="City" data-apicart-cart-add-parameter="shippingAddress.city">
+					</div>
+
+					<div class="col-12 col-md-6 pr-md-0 form-group">
+						<label for="customer-zip">Zip</label>
+						<input type="number" class="form-control" id="customer-zip" placeholder="Zip" data-apicart-cart-add-parameter="shippingAddress.zip">
+					</div>
+				</div>
+
+				<button class="btn btn-danger apicart-cart-finish">Finish order</button>
+			</form>
 		</div>
 	</div>
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://cdn.apicart.dev/v1/?components=all" async></script>
+	<script src="./e-commerce.js"></script>
 
-
-
-	<!--- APICART --->
-
-	<main class="container-fluid my-5">
-		<div id="apicart"></div>
-	</main>
-
-	<script src="https://cdn.jsdelivr.net/npm/@apicart/vue-components@1.0.0-alpha6/dist/bundles/default/default.full.min.js"></script>
-	<script src="/assets/sandbox.js" async></script>
-
-
-	<!--- /APICART --->
-
-
-
-
-
-	<footer class="text-center my-2 my-lg-5">
-		<div class="my-5">
-			<div class="text-center">
-				<div class="mb-3">
-					This website is a static website hosted via <a href="https://pages.github.com" target="_blank" rel="noopener"><strong>Github Pages</strong></a>.
-				</div>
-				<div>
-					<a href="https://github.com/apicart/sandbox.apicart.net" target="_blank" rel="noopener" class="btn btn-outline-secondary font-weight-bold">See the repository <i class="fas fa-chevron-circle-right"></i></a>
-				</div>
-			</div>
-		</div>
-		<div class="text-center mb-5">
-			<a href="https://apicart.slack.com/archives/CB9QSQRGX" target="blank" rel="noopener">
-				<img class="mb-2" lazy="true" src="/assets/images/slack-logo.png" width="80" alt="">
-				<h2 class="font-weight-bold">Join us on Slack!</h2>
-			</a>
-		</div>
-		<div class="text-center mb-3">
-			<a href="https://twitter.com/apicart_en?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-text="I have just tried Apicart JAMstack Sandbox https://sandbox.apicart.net! E-commerce via API in 3 steps! @apicart_en #apicart #ecommerce #webdevelopment " data-show-count="false">Follow @apicart_en</a>
-			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I have just tried Apicart JAMstack Sandbox! E-commerce platform via API in a 3 steps! @apicart_en #apicart #ecommerce #webdevelopment " data-show-count="true">Tweet</a>
-			<a class="github-button" href="https://github.com/apicart/sandbox.apicart.net" data-show-count="true" data-size="large" aria-label="Star apicart/sandbox.apicart.net on GitHub">Star</a>
-		</div>
-		<span class="font-weight-bold">
-			<span>&copy; 2018-2020</span>
-			<a href="https://apicart.net" target="_blank" rel="noopener">Apicart s.r.o.</a>
-		</span>
-		<span>|</span>
-		<span class="font-weight-bold">
-			<a href="https://apicart.net/en-us/products" target="blank" rel="noopener">Products</a>
-		</span>
-		<span>|</span>
-		<span class="font-weight-bold">
-			<a href="https://github.com/apicart/sandbox.apicart.net" target="blank" rel="noopener">Sandbox Code</a>
-		</span>
-	</footer>
-
-	<link onload="this.rel='stylesheet'" rel="alternate stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext">
-	<link onload="this.rel='stylesheet'" rel="alternate stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
+
 </html>
