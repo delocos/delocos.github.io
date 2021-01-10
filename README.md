@@ -2,10 +2,6 @@
     Sandbox.apicart.net
 </h1>
 
-- Repository for the [https://sandbox.apicart.net](https://sandbox.apicart.net).
-- Visit [https://apicart.net](https://apicart.net). Create a static e-commerce with zero backend today.
-- **Fully static** website powered by **Github Pages**.
-
 <h1><a href="https://sandbox.apicart.net">Try it now!</a></h1>
 <a href="https://sandbox.apicart.net">
 <img src="https://raw.githubusercontent.com/apicart/sandbox.apicart.net/master/assets/images/sandbox-screenshot.png" alt="Apicart JAMstack Sandbox preview"
