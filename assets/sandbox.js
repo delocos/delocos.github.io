@@ -1,8 +1,8 @@
 Apicart
 	.setDevEnv()
 	.configure({
-		store: new Apicart.Store({ token: '9mCu3DlBCa4REI?Q7kKly!Rw6!_FvD8K_dgPXe1b20?r6!sPTQMyCpq_ADt!jXOD' }),
-		payments: new Apicart.Payments({ token: 'Q84lNQyLl?nBGvKxxbcdc!nWFKEZrK?L_Is2r9IaOJo14ONbXw1SMlPIeptcaFza' }),
+		store: new Apicart.Store({ token: '7dSze0PQC_L32fhh3jldIpN7zJJtjZZILo58!pPMzaWpuiHG3!K8WBSoIX5MgLKL' }),
+		payments: new Apicart.Payments({ token: 'ECoXYZzEwk1f23c7!npgxBABUnYbCcJpwDI6fwLgUrBlkSLFex9jXh0dOdWERpxx' }),
 		vueComponents: {
 			paymentMethodsList: {
 				allowedMethods: ['cash', 'bank-transfer']
