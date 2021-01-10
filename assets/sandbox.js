@@ -16,12 +16,12 @@ Apicart
 						clothes: {
 							new: [
 								{
-									dataUrl: 'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/01/1.json',
+									dataUrl: 'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/02/2.json',
 									pageUrl: '/green-t-shirt/'
 								},
-								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/02/2.json',
-								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/03/3.json',
-								'https://cdn.apicart.dev/external/wlhv1egho2u4p0e0nkne2mks7f9btigi/data/04/4.json',
+								'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/02/2.json',
+								'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/02/2.json',
+								'https://cdn.apicart.dev/external/yrz6ulvdop8wkdocsymdm3lz2s7twpy6/data/02/2.json',
 
 							],
 							discount: [
